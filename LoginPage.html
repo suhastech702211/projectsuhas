@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <style type="text/css">
+        div{
+            width: 350px;
+            height: 350px;
+            border: 3px solid red;
+            margin: 0 auto;
+            padding: 120px;
+            box-sizing: border-box;
+            background-image: url('https://c8.alamy.com/comp/2H63KC0/hand-drawn-snowflakes-christmas-seamless-pattern-subtle-flying-snow-flakes-on-chalk-snowflakes-background-alive-chalk-handdrawn-snow-overlay-decent-2H63KC0.jpg');
+            border-radius: 12px;
+            
+        }
+
+
+    </style>
+    <body style="background-image: url('https://www.onemedical.com/media/images/heart-healthy-food.original.jpg');">
+        <center><h1 style="color: white; font-family: sans-serif;"> DIETIFY </h1></center>
+        <div>
+            <b>username:</b><br>
+            <input type="text" id="username" name="text" style="border-radius: 5px; text-align: center;">
+            <br>
+            <br>
+            <b>password:</b><br>
+            <input type="password" id="password" name="text" style="border-radius: 5px; text-align:center;">
+            <br>
+            <br>
+            <button onclick="login()" style="border-radius: 5px;"><b>Submit</b></button>
+
+        </div>
+        <script type="text/javascript">
+            function login(){
+                var uname=document.getElementById("username").value;
+                var pass=document.getElementById("password").value;
+
+                if(uname == "suhas@123" && pass == "suhas123"){
+                    location.assign("Homepage.html");
+                }
+                else{
+                    window.alert("Login Falied!");
+                }
+            }
+
+        </script>
+    </body>
+</html>

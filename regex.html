@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="pwd" name="password">
+        <button onclick="function passvalidate()">Submit</button>
+        <script>
+            const passwordpattern=/([A-Z]){1}(a-z)(@#.){1}([a-z]){5}[.]{1}[a-z]{3}/;
+            function validatepassword(password){
+                return passwordpattern.test(password)
+            }
+            const passwords=['Password123!','weakpassword','SecurePass12','p@$$wOrd']
+        </script>
+    </body>
+</html>
